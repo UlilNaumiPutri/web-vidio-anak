@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Video</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #d3d3d3; }
+        header { background: gray; color: white; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
+        .container { display: flex; padding: 20px; }
+        .video-section { flex: 3; display: flex; justify-content: center; align-items: center; padding: 30px; }
+        .video-item { display: flex; flex-direction: column; align-items: center; }
+        iframe { width: 640px; height: 360px; max-width: 100%; }
+        .menu { flex: 1; background: lightgray; padding: 15px; }
+        .menu button { width: 100%; padding: 15px; margin: 10px 0; border: none; background: gray; color: white; cursor: pointer; font-size: 16px; }
+        .menu button:hover { background: darkgray; }
+        footer { background: gray; color: white; text-align: center; padding: 15px; position: fixed; width: 100%; bottom: 0; font-size: 18px; }
+    </style>
+    <script>
+        function changeVideo(url, title) {
+            document.getElementById("video-frame").src = url;
+            document.getElementById("video-title").innerText = title;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Web Video Anak
+    </header>
+    <div class="container">
+        <div class="video-section">
+            <div class="video-item">
+                <iframe id="video-frame" src="https://www.youtube.com/embed/774Pp20Y_wg?si=hlDnmZKyBd86zCAs" frameborder="0" allowfullscreen></iframe>
+                <span id="video-title" style="font-size: 20px; margin-top: 10px; font-weight: bold;">Bernyanyi Bersama</span>
+            </div>
+        </div>
+        <div class="menu">
+            <button onclick="changeVideo('https://www.youtube.com/embed/ADuAcZyLRpI?si=XU32VkUomZBWb90g', 'Bernyanyi Bersama')">Bernyanyi Bersama</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/41RNH5od7XQ?si=GjWlYJer3ItdVl1R', 'Kartun Anak')">Kartun Anak</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/2DVzL3gbvCw?si=ZP-ePybk46nYWy2N', 'Cerita Dongeng')">Cerita Dongeng</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/vCKPS5hlEyg?si=Dd1nPnnw2Cwd_ys0', 'Cerita Legenda')">Cerita Legenda</button>
+            <button onclick="changeVideo('https://www.youtube.com/embed/PQopCQp2kOc?si=oJQ6I2_Yv_b9oxqY', 'Mainan Anak')">Mainan Anak</button>
+        </div>
+    </div>
+    <footer>
+        Selamat Datang di Website Web Video Anak
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
